@@ -1,11 +1,9 @@
-.main-container-hi-brain {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 32px 0 160px 0;
-    display: flex;
-    justify-content: space-between;
+.container{
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
   }
-  
+
   .list-reset {
     margin: 0;
     padding: 0;
@@ -18,14 +16,25 @@
     cursor: pointer;
   }
   
-  .btn-styles {
-    padding: 8px 52px 8px 16px;
-    max-height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--white-color);
-    background-color: var(--coral-color);
+  .button {
+    display: inline-flex;
+    align-items: center;
+    padding-inline: 26px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+
+  .button:hover {
+    background-color: var(--color-light-gray);
   }
   
   .text-normal {
