@@ -1,4 +1,6 @@
-
+* {
+  border: 1px solid red;
+}
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -53,7 +55,6 @@ html {
 
   body {
     min-width: 320px;
-    max-width: 1920px;
     word-break: normal;
     font-family: var(--font-family-base);
     font-size: 16px;
