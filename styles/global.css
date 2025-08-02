@@ -45,18 +45,6 @@
     color: var(--font-grey);
   }
   
-  .df-flex-center-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .grit {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 40px;
-  }
-  
   .visually-hidden {
     position: absolute !important;
     width: 1px !important;

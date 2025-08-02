@@ -4,6 +4,7 @@
   align-items: center;
   column-gap: 20px;
   padding-inline: 32px;
+  min-height: var(--header-heigth);
   background-color: var(--color-dark-alternate);
 }
 
@@ -21,7 +22,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: 7px;
-  height: 90px;
+  height: var(--header-heigth);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;

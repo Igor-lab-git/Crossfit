@@ -1,31 +1,23 @@
-
 @font-face {
-    font-family: "Heebo";
-    font-style: normal;
-    font-display: swap;
-    font-weight:300;
-    src: local(''),
-    url("../fonts/Heebo-Light.woff") format("wolff"),
-    url("../fonts/Heebo-Light.woff2") format("wolff2"),
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Heebo";
-    font-style: normal;
-    font-display: swap;
-    font-weight: 700;
-    src: local(''),
-    url("../fonts/Heebo-Bold.woff") format("wolff"),
-    url("../fonts/Heebo-Bold.woff2") format("wolff2"),
+  font-family: 'Heebo';
+  src: url('../fonts/Heebo-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-
 @font-face {
-    font-family: "Yantramanav";
-    font-style: normal;
-    font-display: swap;
-    font-weight: 700;
-    src: local(''),
-    url("../fonts/Yantramanav-Bold.woff") format("wolff"),
-    url("../fonts/Yantramanav-Bold.woff2") format("wolff2"),
+  font-family: 'Yantramanav';
+  src: url('../fonts/Yantramanav-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }

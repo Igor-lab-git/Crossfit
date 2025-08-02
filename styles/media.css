@@ -4,17 +4,26 @@
         flex-wrap: wrap;
         padding-top: 20px;
         row-gap: 10px;
-        padding-inline: 15px;
     }
 
     .header-menu {
         order: 1;
         flex-basis: 100%;
     }
+
+    .header,
+    .banner {
+        padding-inline: 15px;
+    }
     
     .header-menu-link {
         height: 50px;
     }
+
+    .banner {
+        row-gap: 10px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -38,5 +47,19 @@
     .header-actions {
         column-gap: 15px;
     }
+
+    .banner-info::before {
+        margin-right: 10px;
+    }
+
+    .banner-info {
+        margin-bottom: 5px;
+    }
 }
 
+/* section-banner------------------------------------*/
+
+@media (max-width: 1024px) {
+    
+
+}
