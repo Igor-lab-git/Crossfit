@@ -1,0 +1,67 @@
+
+.motivation-item:nth-child(even) {
+    background-color: var(--color-dark-alternate);
+}
+
+/* nth-child(even) выбирает только чётные элементы из списка*/
+
+.motivation-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
+}
+
+.motivation-item:nth-child(even) .motivation-card {
+    flex-direction: row-reverse;
+}
+
+.motivation-card-image {
+    margin-block: -50px;
+}
+
+.motivation-card-body {
+    padding-left: 35px;
+}
+
+.backdrop-title {
+    position: relative;
+    z-index: 2;
+}
+
+.backdrop-title:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.backdrop-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: calc(100% + 8px);
+    width: 26px;
+    height: 40px;
+    background: url("../../icons/motivation/plus.svg") center/contain no-repeat;
+}
+
+.backdrop-title::after {
+    position: absolute;
+    z-index: -1;
+    top: -0.45em;
+    left: -0.6em;
+    content: attr(data-title);
+    font-size: 2.8em;
+    font-family: var(--font-family-accent);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-light-gray);
+}
+/* -webkit-text-stroke обвотка текста  font-size: 2.8em относительный размер его роидетеля базового элемента  унаследует и пропорционально уменьшается*/
+
+.motivation-card-description {
+    max-width: 400px;
+    margin-bottom: 37px;
+}
+
+.motivation-card-description:not(:last-child) {
+    margin-bottom: 37px;
+}
+

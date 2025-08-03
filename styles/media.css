@@ -1,65 +1,95 @@
+@media (max-width: 1919px) {
+  .motivation-card-image {
+    margin-block: -20px;
+  }
+}
 
 @media (max-width: 1024px) {
-    .header {
-        flex-wrap: wrap;
-        padding-top: 20px;
-        row-gap: 10px;
-    }
+  .header {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    row-gap: 10px;
+  }
 
-    .header-menu {
-        order: 1;
-        flex-basis: 100%;
-    }
+  .header-menu {
+    order: 1;
+    flex-basis: 100%;
+  }
 
-    .header,
-    .banner {
-        padding-inline: 15px;
-    }
-    
-    .header-menu-link {
-        height: 50px;
-    }
+  .header,
+  .banner {
+    padding-inline: 15px;
+  }
 
-    .banner {
-        row-gap: 10px;
-    }
+  .header-menu-link {
+    height: 50px;
+  }
 
+  .banner {
+    row-gap: 10px;
+  }
+
+  .motivation-card {
+    padding-block: 50px;
+  }
+
+  .motivation-card-image {
+    max-width: 30%;
+    height: auto;
+    margin-block: 0;
+  }
 }
 
 @media (max-width: 767px) {
+  .button {
+    padding-inline: 18px;
+  }
 
-    .button {
-        padding-inline: 18px;
-    }
+  .header {
+    padding-top: 10px;
+  }
 
-    .header {
-        padding-top: 10px;
-    }
+  .header-menu-list {
+    column-gap: 24px;
+  }
 
-    .header-menu-list {
-        column-gap: 24px;
-    }
-    
-    .header-menu-link {
-        height: 32px;
-    }
+  .header-menu-link {
+    height: 32px;
+  }
 
-    .header-actions {
-        column-gap: 15px;
-    }
+  .header-actions {
+    column-gap: 15px;
+  }
 
-    .banner-info::before {
-        margin-right: 10px;
-    }
+  .banner-info::before {
+    margin-right: 10px;
+  }
 
-    .banner-info {
-        margin-bottom: 5px;
-    }
+  .banner-info {
+    margin-bottom: 5px;
+  }
+
+  .motivation-card,
+  .motivation-item:nth-child(even) .motivation-card {
+    flex-direction: column-reverse;
+  }
+
+  .motivation-card {
+    padding-block: 30px;
+    row-gap: 30px;
+  }
+
+   .motivation-card-image {
+    max-width: 60%;
+  }
+
+  .motivation-card-description:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 }
 
 /* section-banner------------------------------------*/
 
 @media (max-width: 1024px) {
-    
-
 }

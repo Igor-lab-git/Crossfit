@@ -18,6 +18,12 @@ html {
     margin: 0;
   }
 
+  p:not([class]:last-child) {
+    margin-bottom: 24px;
+  }
+
+  /* p:not([class]:last-child) берёт все теги p в контенере кроме последнего и все соседние p [class]-для безопасности это правило применяется только у тега p у которого нет class*/
+
   h1,
   h2,
   h3,
