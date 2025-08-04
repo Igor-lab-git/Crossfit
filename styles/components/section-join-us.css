@@ -1,3 +1,8 @@
+
+.join-us {
+    background-color: var(--color-dark-alternate);
+}
+
 .join-us-video-wrapper {
   position: relative;
   padding: 150px 30px;
@@ -90,17 +95,11 @@
 }
 
 .backdrop-title.centered::after {
+    top: -0.25em;
     left: 50%;
     translate: -50% 0;
 }
 
-.join-us-form-subtitle {
-    font-weight: 300;
-    font-size: clamp(14px, 1.04vw, 20px);
-    line-height: 1.65;
-    text-transform: uppercase;
-    color: var(--color-light);
-}
 
 .join-us-form-header:not(:last-child) {
     margin-bottom: 52px;
