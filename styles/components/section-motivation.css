@@ -40,7 +40,7 @@
     right: calc(100% + 8px);
     width: 26px;
     height: 40px;
-    background: url("../../icons/motivation/plus.svg") center/contain no-repeat;
+    background: url("../../icons/section-motivation/plus.svg") center/contain no-repeat;
 }
 
 .backdrop-title::after {

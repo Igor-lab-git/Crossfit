@@ -1,0 +1,36 @@
+.training-types {
+  position: relative;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-color: var(--color-dark);
+}
+
+.training-types-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 60px;
+}
+
+.training-types-item {
+    --traningTypesBgIconSize: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+  padding-top: var(--traningTypesBgIconSize);
+  background: url("../../icons/section-training-types/arrow-traning.svg") 100% 0/var(--traningTypesBgIconSize) no-repeat;
+}
+
+/* 100% 0/var(--traningTypesBgIconSize) no-repeat позиционирование в правый верхний угол с явным заданным размером*/
+
+.training-types-item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+
+

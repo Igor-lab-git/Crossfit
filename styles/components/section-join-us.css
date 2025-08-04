@@ -1,0 +1,121 @@
+.join-us-video-wrapper {
+  position: relative;
+  padding: 150px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../images/join-us/join-us-poster.jpg") center/cover no-repeat var(--color-dark-alternate);
+}
+
+/* var(--color-dark-alternate) альтернативный цвет заливка в случае если пропадёт картинкак */
+
+.join-us-video {
+    width: 100%;
+    max-width: 960px;   
+    height: auto;           
+}
+/* width: 100%; max-width: 960px; для одаптации рисунка при сужении экрана */
+
+.join-us-video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--color-light);
+  border: var(--border);
+  border-radius: 50%;
+  translate: -50% -50%; /* Затем "подтягиваем" его обратно на половину своей ширины/высоты */
+}
+
+.join-us-video-play-button::after {
+    content: "";
+    width: 26px;
+    aspect-ratio: 1;
+    transition-duration: var(--transition-duration);
+    background: url("../../icons/section-join-us/arrow-video-btn.svg") center/contain no-repeat;
+}
+
+.join-us-video-play-button:hover {
+    color: var(--color-dark-alternate);
+    background-color: var(--color-light-gray);
+}
+
+.join-us-video-play-button:hover:after {
+    filter: invert(1);
+}
+
+.join-us-body {
+    padding-bottom: 150px;
+}
+
+.join-us-title {
+    position: relative;
+    margin-top: -0.4em;
+    font-weight: 700;
+    font-size: clamp(64px, 9.37vw, 180px);
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+.join-us-title::after {
+    content: "";
+    margin-left: 0.14em;
+    display: inline-block;
+    height: 0.7em;
+    aspect-ratio: 1;
+    background: url("../../icons/section-join-us/arrow-join-us.svg") center/contain no-repeat;
+}
+
+.join-us-title:not(:last-child) {
+    margin-bottom: 130px;
+}
+
+.join-us-form-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 7px;
+}
+
+.backdrop-title.centered::after {
+    left: 50%;
+    translate: -50% 0;
+}
+
+.join-us-form-subtitle {
+    font-weight: 300;
+    font-size: clamp(14px, 1.04vw, 20px);
+    line-height: 1.65;
+    text-transform: uppercase;
+    color: var(--color-light);
+}
+
+.join-us-form-header:not(:last-child) {
+    margin-bottom: 52px;
+}
+
+.join-us-form-body {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.join-us-form-input {
+    max-width: 400px;
+}
+
+.join-us-form-input::placeholder {
+    color: var(--color-light-gray);
+}
