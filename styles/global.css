@@ -9,6 +9,8 @@
   margin-inline: auto;
 }
 
+/* container-wide для того что бы если пользователь откроет сайт на большом экране сайт был ограничем размерами */
+
 .list-reset {
   margin: 0;
   padding: 0;
