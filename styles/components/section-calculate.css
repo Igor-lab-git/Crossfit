@@ -85,32 +85,64 @@ select.input:invalid {
 /* width: 100%; aspect-ratio: 1; для сохранения пропорций элемента круга один к одному*/
 
 .calculate-table {
-    position: relative;
-    border-collapse: collapse;
+  position: relative;
+  border-collapse: collapse;
 }
 /* .calculate-table {
     position: relative;
 } задав не статичное позиционирование таблице выставить по верх чёрного круга*/
 
+.calculate-table :is(td, th) {
+  padding-right: 30px;
+}
+
+.calculate-table :is(td, th):not(:first-child) {
+  padding-left: 30px;
+}
+/* :is(td, th) этим селектором мы сократили обращение к тега в скопках*/
+.calculate-table :is(td, th):not(:last-child) {
+  border-right: 1px solid var(--color-light-gray);
+}
+
+.calculate-table tbody td {
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.calculate-table tbody tr:last-child td:first-child {
+  position: relative;
+}
+
+.calculate-table tbody tr:last-child td:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1px;
+  background-color: var(--color-light-gray);
+}
 
 .calculate-table th {
-    padding-block: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    color: var(--color-light);
+  padding-block: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--color-light);
 }
 
 .calculate-table td {
-    padding-block: 14px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.75;
-    text-align: left;
-    color: var(--color-light-gray);
+  padding-block: 14px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: left;
+  color: var(--color-light-gray);
 }
 
 .calculate-table tfoot td {
-    padding-top: 14px;
-    padding-bottom: 0;
+  color: var(--color-light);
 }
 
+.calculate-table tfoot td {
+  padding-top: 33px;
+  padding-bottom: 0;
+}
