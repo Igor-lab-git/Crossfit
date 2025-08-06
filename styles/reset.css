@@ -52,6 +52,10 @@ html {
     transition-duration: var(--transition-duration);
   }
   
+  svg * {
+    transition-property: fill, stroke;
+  }
+  
   img {
     max-width: 100%;
     word-break: normal;

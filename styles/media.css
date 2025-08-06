@@ -85,6 +85,22 @@
   .calculate-table tfoot td {
     padding-top: 10px;
   }
+
+  .footer-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .footer-main {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .footer-body {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -202,6 +218,23 @@
   }
 
   /* display: none; убераем чёрный фоновый круг */
+
+  .footer-header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footer-body {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-main {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .footer-subscribe:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 /* section-banner------------------------------------*/

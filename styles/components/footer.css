@@ -6,15 +6,24 @@
 .footer-header {
   display: grid;
   grid-template-columns: 20.77% auto;
-  column-gap: 62px;
+  column-gap: 70px;
 }
 
 .footer-header:not(:last-child) {
   margin-bottom: 60px;
 }
 
+.footer-logo {
+  height: auto;
+}
+
 .footer-description {
   text-align: left;
+  font-size: 20px;
+}
+
+.footer-description a {
+  text-decoration: underline;
 }
 
 .footer-body {
@@ -25,11 +34,13 @@
 /* grid-template-columns: 20.77%, auto; чтобы логотип занимал в грид колонке ширину равную самому себе  */
 
 .footer-column-title {
-    font-size: clamp(18px, 1.15vw, 22px);
+  font-size: clamp(18px, 1.15vw, 22px);
 }
 
+/* 1.15vw высчетать это размер в макете 22px / 1920px размер всего макета * 100% */
+
 .footer-column-title:not(:last-child) {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .footer-extra {
@@ -41,24 +52,80 @@
 }
 
 .footer-schedule:not(:last-child) {
-    margin-bottom: 13px;
+  margin-bottom: 13px;
 }
 
 .footer-address:not(:last-child) {
-    font-style: normal;
-    margin-bottom: 35px;
+  font-style: normal;
+  margin-bottom: 35px;
+}
+
+.footer-contacts-item a {
+  text-decoration: underline;
+}
+
+.footer-column-title {
+  position: relative;
 }
 
 .footer-column-title.has-arrow::after {
-    position: absolute;
-    content: "";
-    width: 0.7em;
-    aspect-ratio: 1;
-    margin-left: 0.14em;
-    display: inline-block;
-
-    translate: 0 50%;
-    background: url("../../icons/footer/footer-arrow.svg") center/contain no-repeat;
+  position: absolute;
+  content: "";
+  width: 0.72em;
+  aspect-ratio: 1;
+  margin-left: 0.5em;
+  display: inline-block;
+  transform: translateY(70%);
+  background: url("../../icons/footer/footer-arrow.svg") center/contain
+    no-repeat;
 }
 
 /* width: 0.7em; число полученное размер svg разделённый на размер шрифта к которому иконка привязана через after */
+
+.footer-subscribe {
+  position: relative;
+}
+
+.footer-subscribe-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  aspect-ratio: 1;
+  border: var(--border);
+  border-radius: 50%;
+  background: url("../../icons/footer/footer-btn-arrow.svg") center / 70%
+    no-repeat;
+}
+
+.footer-subscribe-input {
+  padding-right: 70px;
+}
+.footer-subscribe:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.footer-subscribe-button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.footer-soc1als-list {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.footer-soc1als-list a svg path:hover {
+ fill: var(--color-light-gray);
+}
+
+.footer-copyright {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--color-light);
+}
+
+.footer-copyright a {
+  text-decoration: underline;
+}
